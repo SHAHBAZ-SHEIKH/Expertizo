@@ -1,0 +1,12 @@
+Links
+
+create a Link 
+Tags : <a href="https://www.google.com">Google</a>
+
+href : hypher reference
+
+target Arributes : Open New Tab
+
+Internal Links /Relative: Urls Form one to Another Page
+External Links / Absolute Ursl: From one Website another Website
+inpage Links: 
