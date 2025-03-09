@@ -1,0 +1,150 @@
+
+/* ol{
+    list-style-type: decimal;
+} */
+
+
+/* table{
+    border: 2px solid black;
+    empty-cells: show;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+input{
+    padding: 10px;
+    font-size: 30px;
+    
+}
+
+input:focus{
+    background-color: yellow;
+}
+
+button{
+    padding: 10px;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+} */
+
+
+/* body{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Madeena_masjid_nabavi_12122008230.jpg/800px-Madeena_masjid_nabavi_12122008230.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+/* 
+.container{
+
+    border: 1px solid black;
+    width: 25%;
+}
+
+.parent{
+    background-color: aqua;
+    width:100vw;
+    height: 100vh;
+}
+
+.child{
+    background-color: thistle;
+    width:25%;
+}
+
+
+.box{
+    font-size: 100px;
+}
+
+html{
+    font-size: 5px;
+}
+
+.emFont{
+    font-size: 10px;
+}
+
+.emChild{
+    font-size: 5em;
+}
+
+*/
+
+.box{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    
+}
+.box1{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.parent{
+    /* position: relative; */
+    /* background-color: red;
+    width: 200px;
+    height: 200px; */
+    height: 100vh;
+}
+.child{
+    background-color: aqua;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    /* bottom: 10px;
+    left: 10px; */
+}
+
+.btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.para{
+    position: fixed;
+    top: 30px;
+    left: 70px;
+    background-color: aqua;
+    
+}
+
+
+.container {
+    height: 1000px;
+    padding: 20px;
+    border: 2px solid #ccc;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #ff9800;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+      .box{
+        background-color:red;
+        height:800px;
+      }
