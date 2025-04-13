@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: red;
+    height: 70px;
+    padding-top: 20px;
+    
+}
+.logo>img{
+    width: 200px;
+}
+.mainHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navList>ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 25px;
+}
+
+.icon{
+    font-size: 20px;
+}
+
+.humbergicon{
+    display: none;
+}
+.card-img>img{
+    width:400px;
+    height: 250px;
+}
+.conatainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.card1{
+    
+    width: 30%;
+    box-shadow: 10px 10px -10px 10px black;
+}
+
+.card2{
+    width: 30%;
+    
+}
+.feature-Card1{
+    background-color: green;
+    width: 33%;
+}
+.feature-Card2{
+    background-color: yellow;
+    width: 33%;
+}
+.feature-Card3{
+    background-color: aqua;
+    width: 33%;
+}
+.featureHead{
+    text-align: center;
+    text-transform: uppercase;
+}
+.feature-Card{
+    display: flex;
+    gap:10px;
+}
+
+.feature-img>img{
+    width: 440px;
+    height: 350px;
+}
+
+@media(max-width:700px){
+    .navList>ul{
+        display: none;
+    }
+    .icon{
+        display: none;
+    }
+    .humbergicon{
+        display: block;
+        font-size: 25px;
+        color: white;
+    }
+
+}
+
