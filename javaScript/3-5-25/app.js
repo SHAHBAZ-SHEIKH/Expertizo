@@ -22,48 +22,87 @@
 // console.log(date.getFullYear())
 
 
-function eidCountDown(){
-    var nowDate = new Date()
-    var eidDate = new Date("7 June 2025")
-    var diff = eidDate.getTime() - nowDate.getTime()
+// function eidCountDown(){
+//     var nowDate = new Date()
+//     var eidDate = new Date("7 June 2025")
+//     var diff = eidDate.getTime() - nowDate.getTime()
 
-    if(diff<0){
-        document.getElementById("title").innerHTML = "Eid Mubarak"
-        document.getElementById("month").style.display = "none"
-    document.getElementById("days").innerHTML  = days
-    document.getElementById("hours").innerHTML  = hours
-    document.getElementById("minutes").innerHTML = minutes
-    document.getElementById("seconds").innerHTML = seconds
-        clearInterval(eidEnd)
-    }
+//     if(diff<0){
+//         document.getElementById("title").innerHTML = "Eid Mubarak"
+//         document.getElementById("month").style.display = "none"
+//     document.getElementById("days").innerHTML  = days
+//     document.getElementById("hours").innerHTML  = hours
+//     document.getElementById("minutes").innerHTML = minutes
+//     document.getElementById("seconds").innerHTML = seconds
+//         clearInterval(eidEnd)
+//     }
 
-    var months = Math.floor((diff/(1000 * 60 * 60 * 24 * 30)))
-    var days = Math.floor((diff % (1000 * 60 * 60 * 24 * 30) / (1000 * 60 * 60 *24)))
-    var hours = Math.floor((diff % (1000 * 60 * 60 *24) / ( 1000 * 60 * 60)))
+//     var months = Math.floor((diff/(1000 * 60 * 60 * 24 * 30)))
+//     var days = Math.floor((diff % (1000 * 60 * 60 * 24 * 30) / (1000 * 60 * 60 *24)))
+//     var hours = Math.floor((diff % (1000 * 60 * 60 *24) / ( 1000 * 60 * 60)))
 
-    var minutes = Math.floor((diff % (1000 * 60 * 60) / (1000 * 60)))
+//     var minutes = Math.floor((diff % (1000 * 60 * 60) / (1000 * 60)))
 
-    var seconds = Math.floor((diff % (1000 * 60) / (1000)))
+//     var seconds = Math.floor((diff % (1000 * 60) / (1000)))
 
-    if(hours <10){
-        hours = "0" + hours
-    }
+//     if(hours <10){
+//         hours = "0" + hours
+//     }
 
-    if(days <10){
-        days = "0" + days
-    }
-    document.getElementById("month").innerHTML  = months
-    document.getElementById("days").innerHTML  = days
-    document.getElementById("hours").innerHTML  = hours
-    document.getElementById("minutes").innerHTML = minutes
-    document.getElementById("seconds").innerHTML = seconds
+//     if(days <10){
+//         days = "0" + days
+//     }
+//     document.getElementById("month").innerHTML  = months
+//     document.getElementById("days").innerHTML  = days
+//     document.getElementById("hours").innerHTML  = hours
+//     document.getElementById("minutes").innerHTML = minutes
+//     document.getElementById("seconds").innerHTML = seconds
 
-}
-
-
-var eidEnd = setInterval(eidCountDown,1000)
+// }
 
 
+// var eidEnd = setInterval(eidCountDown,1000)
+
+
+// var username = ["Shahabz","Ahmed"]
+
+// console.log(username.includes("Shahabz"))
+
+// var days = prompt("Enter days name");
+
+// switch(days){
+//     case "Sunday":
+//         console.log("Funny Days")
+//         break;
+
+//     case "Monday":
+//         console.log("Works Days")
+//         break;
+
+//     case "Tuesday":
+//         console.log("Agian Subah utho kaam mai jao Days")
+//         break;
+
+//     case "Wednesday":
+//         console.log("Funny Days")
+//         break;
+
+//     case "Thursday":
+//         console.log("Funny Days")
+//         break;
+
+//     case "Friday":
+//         console.log("Funny Days")
+//         break;
+
+//     case "Saturday":
+//         console.log("Funny Days")
+//         break;
+
+
+//     default:
+//         console.log("Wrong day")
+// }
 
 
 
