@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
 
+    <style>
+      .userData {
+        display: flex;
+        justify-content: center;
+      }
+      #userImage {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      #userName {
+        font-size: 25px;
+      }
+
+      #displayImage {
+        width: 250px;
+        height: 250px;
+        box-shadow: 10px 10px 10px black;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Welcome To Dashboard</h1>
+    <div class="userData">
+      <img src="" alt="" id="userImage" />
+      <h3 id="userName">Shhabaz</h3>
+    </div>
+
+    <div>
+      <input type="text" placeholder="Whats on Your Mind" id="postValue" />
+      <input type="text" placeholder="Please image url" id="postImage" />
+
+      <button id="postHandler">Post</button>
+    </div>
+
+    <div id="postSection">
+      
+    </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

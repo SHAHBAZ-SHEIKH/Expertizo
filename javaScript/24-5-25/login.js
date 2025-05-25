@@ -3,7 +3,7 @@
 document.getElementById("loginHandler").addEventListener("click",function(){
     var userEmail = document.getElementById("userEmail").value
     var userPassword = document.getElementById("userPassword").value
-    var userget =JSON.parse(localStorage.getItem("user"))
+    var userget =JSON.parse(localStorage.getItem("uservalue"))
 
     if(!userEmail || !userPassword){
         alert("please All Field are required")
@@ -19,6 +19,7 @@ document.getElementById("loginHandler").addEventListener("click",function(){
 
     if(userExst){
         alert("login Successfully")
+        localStorage.setItem("islogInUser",JSON.stringify(userExst))
 
         setTimeout(()=>{
             window.location.href="index.html"

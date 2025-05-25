@@ -40,42 +40,51 @@ document.getElementById("signupHandler").addEventListener("click",function(){
         return
     }
 
-    var userSet = {
-        userName:userName,
+    // var userSet = {
+    //     userName:userName,
+    //     userEmail:userEmail,
+    //     userPassword:userPassword,
+        
+        
+    // }
+
+    // setTimeout(()=>{
+    //     uservalue.push(userSet)
+
+    // localStorage.setItem("user",JSON.stringify(uservalue))
+
+    // alert("Signup SuccessFully")
+
+    // window.location.href="login.html"
+
+    // },1000)
+
+
+    
+    
+
+    
+const reader = new FileReader();
+  reader.onload = function(e) {
+      const imageUrl = e.target.result;
+
+      uservalue.push({
+            userName:userName,
         userEmail:userEmail,
         userPassword:userPassword,
-        
-        
-    }
+          userImage: imageUrl,
+          
+      });
 
-    setTimeout(()=>{
-        uservalue.push(userSet)
+      localStorage.setItem("uservalue", JSON.stringify(uservalue));
+      alert("Account Created Succcessfully")
 
-    localStorage.setItem("user",JSON.stringify(uservalue))
+      setTimeout(() => {
+          window.location.href = "login.html";
+      }, 2000);
+  }
 
-    alert("Signup SuccessFully")
-
-    window.location.href="login.html"
-
-    },1000)
-
-
-    
-    
-
-    
-//   const reader = new FileReader();
-//   reader.onloadend = (e) => {
-//     var imageUrl = e.target.resut
-
-//     console.log(imageUrl)
-
-//     
-
-    
-
-    
-//     reader.readAsDataURL(imageUrl);
+  reader.readAsDataURL(userImage);
 
   
   
