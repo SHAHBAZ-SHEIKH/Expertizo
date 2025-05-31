@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        #addtocart{
+            display: flex;
+            flex-direction: column;
+        }
+      .cartImag > img {
+        width: 100px;
+        height: 100px;
+      }
+      .cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: red;
+        margin-top: 10px;
+      }
+
+      .price{
+        font-size: 30px;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="addtocart">
+      
+    </div>
+
+    <div class="totalPrice">
+        <div class="price">
+            <p >Total price: <span id="prodcutPrice">700</span>Pkr</p>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+  </body>
+</html>
